@@ -39,15 +39,21 @@
             <h2>Trouver votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
-          <form action="/search" method="get">
-            <label for="search"> Recherche test </label>
+
+          <form action="/search" method="get" class="form-search">
+            <div class="icon-location">
+              <i
+                class="fa-solid fa-location-dot fa-lg"
+                style="color: #000000"
+              ></i>
+            </div>
             <input
               type="text"
               name="Letexte"
-              id="search"
+              id="search-input"
               placeholder="Marseille, France"
             />
-            <button type="submit">Rechercher</button>
+            <button type="submit" id="search-btn">Rechercher</button>
           </form>
         </section>
       </header>

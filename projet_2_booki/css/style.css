@@ -87,11 +87,39 @@ nav {
 }
 
 /******** Section Rechercher+Filtres  ***********/
-.recherche-filtres p {
+.booki-heading p {
   margin-top: 0;
 }
-.recherche-filtres h2 {
+.booki-heading h2 {
   margin-bottom: 8px;
+}
+#search {
+  height: 50px;
+}
+.form-search {
+  display: flex;
+  height: 50px;
+}
+.icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 50px;
+  border-radius: 15px 0px 0px 15px;
+}
+#search-input {
+  width: 192px;
+  text-align: center;
+  border: none;
+  border-top: solid #f2f2f2 1px;
+  border-bottom: solid #f2f2f2 1px;
+}
+#search-btn {
+  width: 132px;
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
 }
 
 /****** Hebergements And Populaires ***********/
