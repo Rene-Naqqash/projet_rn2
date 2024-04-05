@@ -34,9 +34,21 @@
             <a href="#" id="activites">Activités</a>
           </div>
         </nav>
-        <section class="recherche+filtres">
-          <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-          <p>En plein centre-ville ou en pleine nature</p>
+        <section class="recherche-filtres">
+          <div class="booki-heading">
+            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
+          <form action="/search" method="get">
+            <label for="search"> Recherche test </label>
+            <input
+              type="text"
+              name="Letexte"
+              id="search"
+              placeholder="Marseille, France"
+            />
+            <button type="submit">Rechercher</button>
+          </form>
         </section>
       </header>
       <main>

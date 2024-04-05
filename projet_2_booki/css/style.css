@@ -87,6 +87,12 @@ nav {
 }
 
 /******** Section Rechercher+Filtres  ***********/
+.recherche-filtres p {
+  margin-top: 0;
+}
+.recherche-filtres h2 {
+  margin-bottom: 8px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
