@@ -83,7 +83,7 @@ nav {
 #hebergements:hover,
 #activites:hover {
   border-top: solid #0065fc 2.5px;
-  color: #0065fc;
+  color: var(--main-color);
 }
 
 /******** Section Rechercher+Filtres  ***********/
@@ -97,6 +97,7 @@ nav {
   height: 50px;
 }
 .form-search {
+  margin-top: 3%;
   display: flex;
   height: 50px;
 }
@@ -104,7 +105,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: var(--main-bg-color);
   width: 50px;
   border-radius: 15px 0px 0px 15px;
 }
@@ -114,12 +115,62 @@ nav {
   border: none;
   border-top: solid #f2f2f2 1px;
   border-bottom: solid #f2f2f2 1px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#search-input::placeholder {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#search-input:focus::placeholder {
+  color: transparent;
 }
 #search-btn {
   width: 132px;
-  background-color: #0065fc;
+  background-color: var(--main-color);
   border: none;
   border-radius: 0px 15px 15px 0px;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+}
+.container-filters {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */ /*C'est pour plus tard pour mettre le mot filtres en haut et les 4 filtres en bas*/
+}
+
+.title-filters {
+  padding-right: 1%;
+}
+
+.container-filters h3 {
+  display: inline-block;
+}
+.clickable-filters {
+  display: flex;
+  height: 50px;
+}
+.clickable-filters i {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.clickable-filters h3 {
+  padding-right: 15px;
+}
+.clickable-filters div {
+  border: solid #f2f2f2 2px;
+  border-radius: 25px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clickable-filters div:hover {
+  background-color: var(--filter-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
