@@ -59,7 +59,7 @@ a {
   color: var(--main-bg-color);
 }
 
-/****** NavBar ***********/
+/********* NavBar ***********/
 #logo-png {
   height: 19px;
 }
@@ -82,11 +82,11 @@ nav {
 }
 #hebergements:hover,
 #activites:hover {
-  border-top: solid #0065fc 2.5px;
+  border-top: solid var(--main-color) 2.5px;
   color: var(--main-color);
 }
 
-/******** Section Rechercher+Filtres  ***********/
+/********* Section Rechercher+Filtres  ***********/
 .booki-heading p {
   margin-top: 0;
 }
@@ -101,28 +101,37 @@ nav {
   display: flex;
   height: 50px;
 }
+.fa-location-dot {
+  color: #000000;
+}
 .icon-location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg-color);
-  width: 50px;
+  width: 49px;
+  border: solid var(--main-bg-color) 1px;
   border-radius: 15px 0px 0px 15px;
 }
+
 #search-input {
   width: 192px;
   text-align: center;
   border: none;
-  border-top: solid #f2f2f2 1px;
-  border-bottom: solid #f2f2f2 1px;
+  border-top: solid var(--main-bg-color) 1px;
+  border-bottom: solid var(--main-bg-color) 1px;
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  outline: none;
 }
 #search-input::placeholder {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+}
+#search-input:focus {
+  border-bottom: solid var(--filter-bg-color) 2px;
 }
 #search-input:focus::placeholder {
   color: transparent;
@@ -135,6 +144,10 @@ nav {
   font-size: 1.1rem;
   color: white;
   font-weight: 600;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background-color: #1d77ff;
 }
 .container-filters {
   margin-top: 3%;
@@ -161,16 +174,37 @@ nav {
 .clickable-filters h3 {
   padding-right: 15px;
 }
-.clickable-filters div {
-  border: solid #f2f2f2 2px;
+.clickable-filters a {
+  border: solid var(--main-bg-color) 2px;
   border-radius: 25px;
   margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.clickable-filters div:hover {
+.clickable-filters a:hover {
   background-color: var(--filter-bg-color);
+}
+
+/********* message info  ***********/
+.info-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+  border: solid var(--main-bg-color) 1px;
+  border-radius: 100%;
+  margin-right: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-icon i {
+  padding-bottom: 2px;
 }
 
 /****** Hebergements And Populaires ***********/
