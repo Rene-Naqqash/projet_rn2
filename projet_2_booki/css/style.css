@@ -237,6 +237,10 @@ nav {
 .hebergements {
   width: 65%;
 }
+.hebergements h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
 .container-hebergements {
   display: flex;
   flex-wrap: wrap;
