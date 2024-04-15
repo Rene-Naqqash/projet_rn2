@@ -396,8 +396,7 @@ footer {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/* Responsive Fix 
-Title Fix, Search Bar Fix, Footer Fix */
+
 /******** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -424,9 +423,7 @@ Title Fix, Search Bar Fix, Footer Fix */
     align-items: center;
     flex-wrap: nowrap;
   }
-  /* .container-filters h3 {
-    margin-bottom: 18px;
-  } */
+
   /* Hebergements And Populaires */
   .hebergements-and-populaires {
     flex-direction: column;
@@ -465,8 +462,6 @@ Title Fix, Search Bar Fix, Footer Fix */
   .activites-container img {
     height: 200px;
   }
-
-  /* footer */
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
@@ -511,6 +506,9 @@ Title Fix, Search Bar Fix, Footer Fix */
 
   /* Section Rechercher */
 
+  .form-search {
+    margin-top: 20px;
+  }
   .booki-heading h1 {
     font-size: 1.4em;
     margin-top: 20px;
@@ -555,6 +553,7 @@ Title Fix, Search Bar Fix, Footer Fix */
   }
   .title-filters p {
     margin-bottom: 0;
+    margin-top: 18px;
   }
   .container-filters h3 {
     display: inline-block;
